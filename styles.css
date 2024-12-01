@@ -62,8 +62,11 @@ header h1{
     width: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 30px 0px 0px 56px;
+    padding: 50px 0px 30px 0;
+    align-items: center;
+    justify-content: center;
     gap: 40px;
+    overflow-x: hidden;
 }
 
 .item .content #box{
@@ -109,4 +112,14 @@ header h1{
     padding: 0px 25px 0px 30px;
     align-items: center;
     justify-content: center;
+}
+
+footer{
+    background-color: #000;
+    padding: 10px 0;
+    text-align: center;
+    color: #F0EEE9;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

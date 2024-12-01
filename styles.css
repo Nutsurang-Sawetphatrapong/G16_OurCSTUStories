@@ -9,16 +9,26 @@
 
 header{
     background-color: #000;
-    padding: 20px 0;
+    padding: 30px 0 30px 0;
+    gap: 20px;
 }
 
 header h1{
     color: #F0EEE9;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #F0EEE9;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
 }

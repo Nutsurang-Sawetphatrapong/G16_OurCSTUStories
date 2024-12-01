@@ -59,8 +59,10 @@ header h1{
 
 .item{
     width: 100vh;
+    display: flex;
     flex-direction: column;
     padding: 30px 0px 0px 30px;
+    gap: 40px;
 }
 
 .item .content #box{
@@ -72,4 +74,31 @@ header h1{
     border-radius: 50px;
     overflow: hidden;
     width: 700px;
+}
+
+.item #box .box-left img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #9b9b9b;
+}
+
+.item #box .box-left h5{
+    font-size: 16px;
+}
+
+.item #box .box-left {
+    width: 159px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.item #box .box-right{
+    width: 500px;
+    height: 150px;
+    display: flex;
+    
 }

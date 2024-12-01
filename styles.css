@@ -112,6 +112,13 @@ a:hover::after, a:hover::before{
     border-radius: 50px;
     overflow: hidden;
     width: 700px;
+    transition: all 0.3s ease;
+}
+
+.item .content #box:hover{
+    background-color: #000;
+    color: #fff;
+    box-shadow: #D8E63C 5px 5px;
 }
 
 .item #box .box-left img{

@@ -74,6 +74,7 @@ a:hover::after, a:hover::before{
 .sidebar img{
     object-fit: cover;
     width: 100%;
+    animation-duration: 1.5s; 
 }
 
 .sidebar h1{
@@ -84,6 +85,7 @@ a:hover::after, a:hover::before{
     translate: 25% 90%;
     cursor: default;
     transition: all 0.4s ease;
+    animation-duration: 1.6s; 
 }
 
 .sidebar h1:hover{
@@ -113,6 +115,7 @@ a:hover::after, a:hover::before{
     overflow: hidden;
     width: 700px;
     transition: all 0.3s ease;
+    animation-duration: 1.5s; 
 }
 
 .item .content #box:hover{

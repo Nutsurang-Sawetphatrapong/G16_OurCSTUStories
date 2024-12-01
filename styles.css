@@ -4,10 +4,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Syne', sans-serif;
 }
 
-header {
-    background-color: crimson;
+header{
+    background-color: #000;
     padding: 20px 0;
-    
+}
+
+header h1{
+    color: #F0EEE9;
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }

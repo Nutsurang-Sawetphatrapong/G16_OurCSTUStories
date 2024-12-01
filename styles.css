@@ -56,3 +56,20 @@ header h1{
     padding: 40px;
     cursor: default;
 }
+
+.item{
+    width: 100vh;
+    flex-direction: column;
+    padding: 30px 0px 0px 30px;
+}
+
+.item .content #box{
+    display: flex;
+    border: 1px solid #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    padding: 10px;
+    height: auto;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 700px;
+}

@@ -82,26 +82,26 @@ a:hover::after, a:hover::before{
     color: #fff;
     font-size: 2.5em;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    translate: 25% 90%;
+    translate: 20% 80%;
     cursor: default;
     transition: all 0.4s ease;
-    animation-duration: 1.6s; 
+    transition: all 0.3s ease;
 }
 
 .sidebar h1:hover{
-    transform: scale(1.1);
-    text-shadow: 2px 2px 4px rgba(16, 38, 0, 0.5);
-    color: #D8E63C;
+    transform: scale(1.05);
+    text-shadow: 2px 2px 4px rgba(243, 243, 243, 0.5);
+    color: #000;
 }
 
 .item{
     width: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 50px 0px 30px 0;
+    padding: 550px 0px 50px 0;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 40px;   
     overflow-x: hidden;
 }
 

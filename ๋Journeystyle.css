@@ -8,3 +8,74 @@
     box-sizing: border-box;
     font-family: 'Syne', sans-serif;
 }
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+body {
+    background-color: #f5f3f2;
+}
+
+.Ourjourney { /* จัดตำแหน่งทั้งหน้า */
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.navbar{ /* แถบด้านบน */
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    position: sticky;
+    width: 100%;
+    padding: 25px;
+    top: 0;
+    z-index: 1000;
+    font-weight: bold;
+}
+
+.navbar a{ /* แถบด้านบน */
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 45px;
+}
+
+#home{ /* ปุ่ม homepage */
+    font-size: 30px;
+}
+
+#home:hover{ /* ปุ่ม homepage */
+    color: #9f9494;
+}
+
+#journey:hover{ /* ปุ่ม journey */
+    color: #9f9494;
+}
+
+#future:hover{ /* ปุ่ม future */
+    color: #9f9494;
+}
+
+#contact{ /* ปุ่ม contact */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    background-color: #b0f057;
+    width: 150px;
+    height: 45px;
+    position: fixed;
+    right: 70px;
+    font-size: 18px;
+    border-radius: 100px;
+    border: 3px solid black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), 0 5px 0 #fdfded;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#contact:hover{ /* ปุ่ม contact */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), 0 0 0 #fdfded; /* ลบเงาสีครีม */
+    transform: translateY(-2px);
+}

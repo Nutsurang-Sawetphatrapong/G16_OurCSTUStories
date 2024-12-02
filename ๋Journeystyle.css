@@ -79,3 +79,23 @@ body {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), 0 0 0 #fdfded; /* ลบเงาสีครีม */
     transform: translateY(-2px);
 }
+
+.OurJourney h1 { /* ข้อความ our journey */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 45px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.allpic{ /* รูปรวม */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allpic img{ /* รูปรวม */
+    width: 100%;
+}

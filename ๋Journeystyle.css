@@ -169,3 +169,12 @@ body {
     animation: bounceIn 1.5s ease-out;
     opacity: 1;
 }
+
+footer { /* footer */
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+    margin-top: 40px;
+}

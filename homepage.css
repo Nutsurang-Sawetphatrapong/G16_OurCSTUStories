@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -209,4 +211,157 @@ body {
   .profile img:hover {
     transform: scale(1.1); 
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7); 
+  }
+
+  #headerformTEXT{
+    font-family:'Lato', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+#Bigheader{
+    font-family:'Lato', sans-serif;
+    text-align: center;
+    
+}
+
+
+
+
+.body {
+    /* font-family: 'Lato', sans-serif; */
+    background-color: white;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 0px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .button {
+    padding: 10px;
+    font-size: 16px;
+    border:white;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .headerform{
+    text-align: center;
+  }
+
+  .feedback-container {
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    text-align: center;
+  }
+
+  .feedback-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 200px;
+    margin: 20px 0;
+  }
+
+  .feedback-card {
+    width: 100%;
+    padding: 20px;
+    background: ccc;
+    border-radius: 10px;
+    box-shadow:  0 10px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    background-color: black;
+    color: white;
+  }
+
+  .feedback-content {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    filter: opacity(1);
+  }
+
+
+  .feedback-author {
+    font-size: 14px;
+    color: white;
+  }
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .control-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+
+  .control-btn:disabled {
+    background: gray;
+    cursor: not-allowed;
+  }
+
+  #error{
+    color: red;
+    font-size: small;
+  }
+
+  .Ratemecol{
+    display: flex;
+    flex-direction: row;
+    color: yellow
+  }
+
+  /* ################## */
+
+
+  @media only screen and (max-width: 500px) {
+    .Ratemecol{
+      flex-direction: column;
+    }
   }

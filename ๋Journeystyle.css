@@ -81,10 +81,27 @@ a:hover::after, a:hover::before{ /* แถบ bar */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 3.5px solid #000;
 }
 
 .allpic img{ /* รูปรวม */
     width: 100%;
+}
+
+.overview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.overview h1 {
+    font-size: 40px;
+    width: 250px;
+    text-align: center;
+    border-bottom: 3.5px solid #000;
 }
 
 .classbox { /* กล่อง journey */

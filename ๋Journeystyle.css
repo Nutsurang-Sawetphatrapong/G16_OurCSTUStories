@@ -13,7 +13,7 @@
     scroll-behavior: smooth;
 } */
 
-body {
+body { /*background */
     background-color: #f5f3f2;
 }
 
@@ -23,71 +23,58 @@ body {
     margin: auto;
 }
 
-.navbar{ /* แถบด้านบน */
-    display: flex;
-    align-items: center;
-    background-color: #000000;
-    position: sticky;
-    width: 100%;
-    padding: 25px;
-    top: 0;
-    z-index: 1000;
-    font-weight: bold;
+header{ /* หัวข้อ */
+    background-color: #000;
+    padding: 30px 0 30px 0;
+    gap: 20px;
 }
 
-.navbar a{ /* แถบด้านบน */
-    color: #ffffff;
-    font-size: 20px;
-    text-decoration: none;
-    margin-left: 45px;
-}
-
-#home{ /* ปุ่ม homepage */
-    font-size: 30px;
-}
-
-#home:hover{ /* ปุ่ม homepage */
-    color: #9f9494;
-}
-
-#journey:hover{ /* ปุ่ม journey */
-    color: #9f9494;
-}
-
-#future:hover{ /* ปุ่ม future */
-    color: #9f9494;
-}
-
-#contact{ /* ปุ่ม contact */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000000;
-    background-color: #b0f057;
-    width: 150px;
-    height: 45px;
-    position: fixed;
-    right: 70px;
-    font-size: 18px;
-    border-radius: 100px;
-    border: 3px solid black;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), 0 5px 0 #fdfded;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-#contact:hover{ /* ปุ่ม contact */
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), 0 0 0 #fdfded; /* ลบเงาสีครีม */
-    transform: translateY(-2px);
-}
-
-.OurJourney h1 { /* ข้อความ our journey */
-    color: rgb(0, 0, 0);
+header h1{ /* หัวข้อ */
+    color: #F0EEE9;
     text-align: center;
-    font-size: 45px;
+    margin-bottom: 15px;
+    cursor: default;
+}
+
+.navbar{ /* แถบ bar */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar a { /* แถบ bar */
+    position: relative;
+    text-decoration: none;
+    color: #F0EEE9;
+    border: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 0 10px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.navbar a::before,.navbar a::after { /* แถบ bar */
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color:#D8E63C;
+    transition: all 0.3s ease;
+}
+
+.navbar a:after { /* แถบ bar */
+    left: 0;
+    bottom: -3px;
+}
+
+.navbar a:before { /* แถบ bar */
+    right: 0;
+    top: -10px;
+}
+
+a:hover::after, a:hover::before{ /* แถบ bar */
     width: 100%;
-    padding: 10px;
-    margin-top: 25px;
-    margin-bottom: 25px;
 }
 
 .allpic{ /* รูปรวม */
@@ -171,10 +158,11 @@ body {
 }
 
 footer { /* footer */
-    background-color: #000000;
-    color: white;
+    background-color: #000;
+    padding: 10px 0;
     text-align: center;
-    font-size: 16px;
-    padding: 8px;
-    margin-top: 40px;
+    color: #F0EEE9;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

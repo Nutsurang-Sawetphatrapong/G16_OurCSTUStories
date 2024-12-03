@@ -7,61 +7,66 @@
     font-family: 'Syne', sans-serif;
 }
 
-html{
-  scroll-behavior: smooth;
 
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
-}
-
-
-header {
-  background-color: #333;
-  padding: 20px 0;
-  position: fixed;
+header { 
   width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #000;
+  padding: 20px 0; 
+  text-align: center;
 }
 
-main{
-  margin-top: 100px;
+header h4 { 
+  color: #F0EEE9;
+  margin: 0;
+  font-size: 36px; 
+  font-weight: bold;
+  cursor: default;
 }
 
-nav {
+.navbar { 
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
+  justify-content: center; 
+  gap: 60px; 
+  padding: 10px 0;
 }
 
-nav a {
+.navbar a { 
+  position: relative;
   text-decoration: none;
-  color: #fff;
-  font-size: 18px;
+  color: #F0EEE9;
+  font-size: 20px; 
   font-weight: 600;
   padding: 10px 15px;
-  border-radius: 8px;
+}
+
+.navbar a::before, .navbar a::after { 
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: #D8E63C;
   transition: all 0.3s ease;
 }
 
-
-nav a:hover {
-  background-color: #1e90ff;
-  color: #fff;
-  transform: scale(1.1);
+.navbar a:after { 
+  left: 0;
+  bottom: -5px; 
 }
 
+.navbar a:before { 
+  right: 0;
+  top: -5px; 
+}
 
-nav a.active {
-  background-color: #ff6347;
-  color: #fff;
+.navbar a:hover::after, .navbar a:hover::before { 
+  width: 100%;
 }
 
 

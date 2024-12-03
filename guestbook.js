@@ -85,5 +85,5 @@ const showFeedback = (index) => {
         showFeedback(currentIndex);
       }
     });
-
+    
     showFeedback(currentIndex);

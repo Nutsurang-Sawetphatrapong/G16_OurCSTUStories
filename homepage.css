@@ -423,16 +423,7 @@ button:disabled {
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  .form-container {
-    margin-top: 500px;
-  }
-}
-  
 @media only screen and (max-width: 768px) {
-  .form-container {
-    margin-top: 1800px;
-  }
   main{
     margin-top: 250px;
   }
